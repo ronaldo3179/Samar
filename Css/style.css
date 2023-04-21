@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    
+
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* list */
+.header .nav .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* position: absolute; */
+    /* top: 20px;
+    right: 0px; */
+    font-size: 15px;
+}
+
+.header .nav .nav__list ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .nav .nav__list ul li {
+    list-style: none;
+   
+}
+
+.header .nav .nav__list ul li a {
+    display: flex;
+    text-decoration: none; 
+    transition: all 0.5s;
+}
+
+.header .nav .nav__list ul li a:hover {
+    color: #F5608E;
+}
+
+.header .nav .nav__list ul li a:hover p {
+    animation: upToDown 0.3s; 
+}
+
+@keyframes upToDown {
+    49% {
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+
+/* button */
+.header .nav .nav__list button{
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #d04d41;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+.header .nav .nav__list button:hover {
+    background-position: right center;
+}
+
+/* END HEADER */
+
+/* FREELANCE */
+.freelance {
+    padding: 153px 0px 0px 0px;
+    background-image: url(./../img/pic2.png);
+    background-position: top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.freelance .freelance__content {
+    display: flex;
+    /* position: relative; */
+    /* right: 0; */
+}
+
+.freelance .freelance__content .content__left {
+    padding: 70px 130px 30px 0px;
+    width: 60%;
+}
+
+.freelance .freelance__content .content__left h2 {
+    color: #F55F8D;
+    margin-bottom: 20px;
+}
+
+.freelance .freelance__content .content__left h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.freelance .freelance__content .content__left p {
+    color: #757575;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.freelance .freelance__content .content__left .check__left {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+
+.freelance .freelance__content .content__left .check__left .bg__check {
+    padding: 7px 8px;
+    /* font-size: 20px; */
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+}
+
+.freelance .freelance__content .content__left button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #d04d41;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    outline: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.freelance .freelance__content .content__right {
+    width: 40%;
+}
+
+.freelance .freelance__content .content__left .content__right img {
+    max-width: 100%;
+}
+/* END FREELANCE */
